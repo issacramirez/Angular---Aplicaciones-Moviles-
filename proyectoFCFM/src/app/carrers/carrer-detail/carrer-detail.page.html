@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+          <ion-back-button defaultHref="/carrers"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{carrer.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img [src]="carrer.imageURL"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1 class="ion-text-center" >{{carrer.nombre}}</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list *ngIf="carrer.coments && carrer.coments.length > 0; noComents" >
+          <ion-item *ngFor="let coment of carrer.coments">
+            {{coment}}
+          </ion-item>
+        </ion-list>
+        <ng-template #noComents>
+          <ion-text>
+            <p class="ion-text-center">No description yet</p>
+          </ion-text>
+        </ng-template>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  ionToggle: boolean = false;
 
+  constructor(private homeService: HomeService) {}
+
+  changeDark(){
+    this.homeService.changeDarkMode()
+  }
 }

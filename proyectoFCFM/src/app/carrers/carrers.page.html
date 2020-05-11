@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start" >
+    <ion-back-button defaultHref="/home"></ion-back-button>
+</ion-buttons>
+    <ion-title>Carreras de FCFM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset="true">
+    <ion-item *ngFor="let carrer of carrers" [routerLink]="['/carrers', carrer.id]">
+      <ion-avatar slot="start" >
+        <img [src]="carrer.imageURL" />
+      </ion-avatar>
+      <ion-label>{{carrer.nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
