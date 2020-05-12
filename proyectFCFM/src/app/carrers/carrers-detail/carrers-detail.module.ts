@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CarrerDetailPageRoutingModule } from './carrer-detail-routing.module';
+import { CarrersDetailPageRoutingModule } from './carrers-detail-routing.module';
 
-import { CarrerDetailPage } from './carrer-detail.page';
+import { CarrersDetailPage } from './carrers-detail.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CarrerDetailPageRoutingModule
+    CarrersDetailPageRoutingModule
   ],
-  declarations: [CarrerDetailPage]
+  declarations: [CarrersDetailPage]
 })
-export class CarrerDetailPageModule {}
+export class CarrersDetailPageModule {}

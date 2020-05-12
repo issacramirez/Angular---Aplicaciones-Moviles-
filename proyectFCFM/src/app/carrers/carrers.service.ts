@@ -40,7 +40,7 @@ export class CarrersService {
   ]
 
   constructor() { }
-
+  
   getCarrers(){
     return [...this.carrers]
   }

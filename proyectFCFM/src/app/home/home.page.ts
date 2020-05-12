@@ -10,7 +10,7 @@ export class HomePage {
 
   ionToggle: boolean = false;
 
-  constructor(private homeService: HomeService) {}
+  constructor(private homeService: HomeService ) {}
 
   changeDark(){
     this.homeService.changeDarkMode()

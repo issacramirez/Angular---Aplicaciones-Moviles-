@@ -12,7 +12,7 @@ const routes: Routes = [
       },
       {
         path: ':carrerId',
-        loadChildren: () => import('./carrers/carrer-detail/carrer-detail.module').then(m => m.CarrerDetailPageModule)
+        loadChildren: () => import('./carrers/carrers-detail/carrers-detail.module').then(m => m.CarrersDetailPageModule)
       }
     ]
   },

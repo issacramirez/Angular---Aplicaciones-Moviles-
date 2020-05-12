@@ -9,8 +9,8 @@ const routes: Routes = [
     component: CarrersPage
   },
   {
-    path: 'carrer-detail',
-    loadChildren: () => import('./carrer-detail/carrer-detail.module').then( m => m.CarrerDetailPageModule)
+    path: 'carrers-detail',
+    loadChildren: () => import('./carrers-detail/carrers-detail.module').then( m => m.CarrersDetailPageModule)
   }
 ];
 

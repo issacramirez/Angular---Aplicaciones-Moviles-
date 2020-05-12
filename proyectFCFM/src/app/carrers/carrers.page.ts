@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CarrersService } from "./carrers.service";
+import { CarrersService } from './carrers.service';
 import { HomeService } from '../home/home.service';
 
 @Component({
@@ -10,8 +10,7 @@ import { HomeService } from '../home/home.service';
 export class CarrersPage implements OnInit {
 
   carrers = []
-  constructor(private carrerService: CarrersService, private homeService: HomeService ) { }
-
+  constructor(private carrerService: CarrersService, private homeService: HomeService  ) { }
 
   ngOnInit() {
     this.carrers = this.carrerService.getCarrers()

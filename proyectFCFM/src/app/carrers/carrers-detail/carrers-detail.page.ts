@@ -4,11 +4,11 @@ import { CarrersService } from '../carrers.service';
 import { Carrer } from '../carrer.model';
 
 @Component({
-  selector: 'app-carrer-detail',
-  templateUrl: './carrer-detail.page.html',
-  styleUrls: ['./carrer-detail.page.scss'],
+  selector: 'app-carrers-detail',
+  templateUrl: './carrers-detail.page.html',
+  styleUrls: ['./carrers-detail.page.scss'],
 })
-export class CarrerDetailPage implements OnInit {
+export class CarrersDetailPage implements OnInit {
 
   carrer: Carrer;
 
