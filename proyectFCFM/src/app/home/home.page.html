@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title class="ion-text-center" >Facultad de Ciencias Fisico-Matematico</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,22 +7,22 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item class="ion-padding-horizontal" >
-        <ion-icon slot="start" name="moon"></ion-icon>
+        <ion-icon slot="start" name="moon"color="warning"></ion-icon>
         <ion-toggle slot="end" [(ngModel)]="ionToggle" (ionChange)="changeDark()" ></ion-toggle>
     </ion-item>
   </ion-list>
   <div class="ion-padding-bottom"></div>
   <ion-list>
-    <ion-item [routerLink]="['/carrers']" class="ion-padding">
+    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="secondary" >
       <ion-label>Licenciaturas</ion-label>
     </ion-item>
-    <ion-item [routerLink]="['/carrers']" class="ion-padding">
+    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="secondary">
       <ion-label>Historia</ion-label>
     </ion-item>
-    <ion-item [routerLink]="['/carrers']" class="ion-padding">
+    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="secondary">
       <ion-label>Reglamento</ion-label>
     </ion-item>
-    <ion-item [routerLink]="['/carrers']" class="ion-padding">
+    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="secondary">
       <ion-label>Ubicacion</ion-label>
     </ion-item>
   </ion-list>

@@ -1,6 +1,10 @@
+*{
+  font-family: 'Cambria';
+}
+
 #container {
   text-align: center;
-
+  
   position: absolute;
   left: 0;
   right: 0;
@@ -26,8 +30,18 @@
   text-decoration: none;
 }
 
+.ion-item-menu{
+  --border-width: 5px;
+  --border-style: solid;
+  --border-radius: 25px;
+  --border-color: #000;
+}
+
 .ion-padding{
-  padding: 10px;
+  --padding-top: 5px;
+  --padding-bottom: 5px;
+  --padding-end: 5px;
+  --padding-start: 5px;
 }
 
 .ion-padding-bottom{

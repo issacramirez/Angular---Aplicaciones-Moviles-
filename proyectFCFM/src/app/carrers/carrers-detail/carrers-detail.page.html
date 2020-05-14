@@ -1,9 +1,14 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start" >
           <ion-back-button defaultHref="/carrers"></ion-back-button>
     </ion-buttons>
     <ion-title>{{carrer.nombre}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" hidden >
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

@@ -10,31 +10,31 @@ export class CarrersService {
     {
       id: '1',
       nombre: 'Lic en Ciencias Computacionales',
-      imageURL: 'http://www.fcfm.uanl.mx/sites/default/files/LCC.jpg',
+      imageURL: 'assets/LCC.jpg',
       coments: ['Carrera relacionada a la informatica computacional']
     },
     {
       id: '2',
       nombre: 'Lic en Multimedia y Animacion Digital',
-      imageURL: 'http://www.fcfm.uanl.mx/sites/default/files/LMAD_0.jpg',
+      imageURL: 'assets/LMAD.jpg',
       coments: ['Carrera relacionada a la creacion de video juegos y multimedia']
     },
     {
       id: '3',
       nombre: 'Lic en Matematicas',
-      imageURL: 'http://www.fcfm.uanl.mx/sites/default/files/LM_0.jpg',
+      imageURL: 'assets/LM.jpg',
       coments: ['Carrera relacionada a las matematicas']
     },
     {
       id: '4',
       nombre: 'Lic en Fisica',
-      imageURL: 'http://www.fcfm.uanl.mx/sites/default/files/LF.jpg',
+      imageURL: 'assets/LF.jpg',
       coments: ['Carrera relacionada a fisica']
     },
     {
       id: '5',
       nombre: 'Lic en Seguridad en Tecnologias de la Informacion',
-      imageURL: 'http://www.fcfm.uanl.mx/sites/default/files/LSTI.jpg',
+      imageURL: 'assets/LSTI.jpg',
       coments: ['Carrera relacionada a seguridad informatica']
     },
   ]
