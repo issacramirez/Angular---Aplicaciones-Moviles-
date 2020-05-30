@@ -11,7 +11,7 @@ export class CarrersService {
       id: '1',
       nombre: 'Lic en Ciencias Computacionales',
       imageURL: 'assets/LCC.jpg',
-      coments: ['Carrera relacionada a la informatica computacional']
+      coments: ['Formar profesionistas dedicados al estudio de las Ciencias Computacionales, con capacidad de crear, desarrollar e implementar tecnologías de información y comunicación, para apoyar el ámbito económico, social y científico de la región y del país, a través del desarrollo y conocimiento tecnológico.']
     },
     {
       id: '2',
