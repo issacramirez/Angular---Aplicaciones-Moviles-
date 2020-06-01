@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {
   ToastController,
   Platform
@@ -11,6 +12,8 @@ import {
   GoogleMapsAnimation,
   MyLocation
 } from '@ionic-native/google-maps';
+=======
+>>>>>>> 67dcf6069adec142c8b4e8fe47053da7b2589609
 
 @Component({
   selector: 'app-ubicacion',
@@ -18,6 +21,7 @@ import {
   styleUrls: ['./ubicacion.page.scss'],
 })
 export class UbicacionPage implements OnInit {
+<<<<<<< HEAD
   map: GoogleMap;
   address:string;
 
@@ -94,6 +98,12 @@ export class UbicacionPage implements OnInit {
       position: 'middle'
     });
     toast.present();
+=======
+
+  constructor() { }
+
+  ngOnInit() {
+>>>>>>> 67dcf6069adec142c8b4e8fe47053da7b2589609
   }
 
 }
