@@ -32,18 +32,18 @@
 
 .ion-item-menu{
   --border-width: 5px;
-  --border-style: solid;
-  --border-radius: 25px;
-  --border-color: #000;
+  --border-style: outset;
+  --border-radius: 50px;
 
 }
 
 .ion-padding{
-  --padding-top: 5px;
-  --padding-bottom: 5px;
-  --padding-end: 5px;
-  --padding-start: 5px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
 }
+
 
 .ion-padding-bottom{
   padding-bottom: 50px;
