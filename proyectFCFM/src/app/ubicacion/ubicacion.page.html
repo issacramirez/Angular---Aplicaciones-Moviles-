@@ -28,7 +28,11 @@
       </ion-card>
     </ion-row>
     <ion-row>
-      <div id="map"></div>
+        <div id="map"></div>
+        <ion-button (click)="getLocation()" expand="block" shape="round" >
+          Click me
+        </ion-button>
+        <div id="indicators"></div>
     </ion-row>
   </ion-grid>
 </ion-content>

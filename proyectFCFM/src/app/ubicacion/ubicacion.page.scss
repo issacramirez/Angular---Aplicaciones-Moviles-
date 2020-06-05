@@ -10,3 +10,11 @@ ion-content {
       }
     }
   }
+
+  #indicators {
+    padding: 5px;
+    height: 250px;
+    width: 350px;
+    overflow-y: auto;
+    display: block;
+  }

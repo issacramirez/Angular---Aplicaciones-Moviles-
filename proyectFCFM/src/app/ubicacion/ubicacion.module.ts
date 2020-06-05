@@ -8,6 +8,7 @@ import { UbicacionPageRoutingModule } from './ubicacion-routing.module';
 
 import { UbicacionPage } from './ubicacion.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
