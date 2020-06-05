@@ -1,0 +1,12 @@
+ion-content {
+    #map {
+      width: 350px;
+      height: 330px;
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+      display: block;
+      &.show-map{
+        opacity: 1;
+      }
+    }
+  }

@@ -15,7 +15,19 @@ const routes: Routes = [
         loadChildren: () => import('./carrers/carrers-detail/carrers-detail.module').then(m => m.CarrersDetailPageModule)
       }
     ]
+  },  {
+    path: 'ubicacion',
+    loadChildren: () => import('./ubicacion/ubicacion.module').then( m => m.UbicacionPageModule)
   },
+  {
+    path: 'historia',
+    loadChildren: () => import('./historia/historia.module').then( m => m.HistoriaPageModule)
+  },
+  {
+    path: 'reglamento',
+    loadChildren: () => import('./reglamento/reglamento.module').then( m => m.ReglamentoPageModule)
+  },
+
 
 ];
 
