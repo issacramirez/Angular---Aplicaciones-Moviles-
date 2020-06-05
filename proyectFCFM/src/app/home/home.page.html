@@ -5,21 +5,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
-  <ion-list> 
+  <ion-list hidden > 
     <ion-item>
         <ion-icon slot="start" name="moon"color="dark"></ion-icon>
         <ion-toggle slot="end" [(ngModel)]="ionToggle" (ionChange)="changeDark()" ></ion-toggle>
     </ion-item>
+  </ion-list>
+  <!-- <ion-list inset="true">
+    <ion-item *ngFor="let logo of logos">
+      <img [src]="logo.imageURL" />
+    </ion-item> -->
   </ion-list>
   <div class="ion-padding-bottom"></div>
   <ion-list color="dark" >
     <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Licenciaturas</ion-label>
     </ion-item>
-    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="light">
+    <ion-item [routerLink]="['/historia']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Historia de la Facultad</ion-label>
     </ion-item>
-    <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="light">
+    <ion-item [routerLink]="['/reglamento']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Reglamento</ion-label>
     </ion-item>
     <ion-item [routerLink]="['/ubicacion']" class="ion-text-center ion-item-menu ion-padding" color="light">

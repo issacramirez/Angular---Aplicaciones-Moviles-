@@ -46,6 +46,13 @@
 
 
 .ion-padding-bottom{
+  flex-direction: inherit;
   padding-bottom: 50px;
   background-color: none;
+}
+
+.ion-padding-bottom ion-img{
+  flex-direction: column;
+  height: 150px;
+  width: 150px;
 }

@@ -29,6 +29,9 @@ export class UbicacionPage implements OnInit {
   
   constructor(public geolocation: Geolocation) {}
   
+
+  // la consola marca error getting location, user denied location promt
+  // esta funcion obtiene la longitud y latitud del que usa la aplicacion pero tiene fallo
   getLocation(){
     this.geolocation.getCurrentPosition().then((resp) =>{
       console.log("lat: " + resp.coords.latitude + "long: " + resp.coords.longitude)
@@ -39,9 +42,13 @@ export class UbicacionPage implements OnInit {
     });
   }
   
+
+  // variables temporales para guardarlas de la funcion getLocation
   lati: number;
   lngi: number;
 
+  // coordenada origen temporal, se quiere obtener de currentPosition para generar la ruta 
+  // de el que usa la aplicacion
    // origen
    origin = { lat: 25.737811, lng: -100.263298 };
    // fcfm
@@ -49,6 +56,7 @@ export class UbicacionPage implements OnInit {
 
   ngOnInit() {
    this.loadMap();
+   // obtener la geolocalizacion al momento que carga la pagina
   //  this.getLocation();
   }
 
@@ -76,6 +84,12 @@ export class UbicacionPage implements OnInit {
     });
   }
 
+      //     ATENCION
+
+      //esta funcion calcula la ruta y funciona bien
+      // la variable origin esta con una direccion de prueba
+      // se pretende usar la direccion de quien usa la app con getLocation
+      // pero no da error la funcion mencionada
   private calculateRoute(){
     this.directionsService.route({
       origin: this.origin,
