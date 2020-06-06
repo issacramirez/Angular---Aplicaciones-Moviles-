@@ -71,7 +71,7 @@ export class UbicacionPage implements OnInit {
     // create map
     this.map = new google.maps.Map(mapEle, {
       center: myLatLng,
-      zoom: 13
+      zoom: 13.2
     });
 
     this.directionsDisplay.setMap(this.map);
