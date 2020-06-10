@@ -17,7 +17,7 @@ export class CarrersService {
       id: '2',
       nombre: 'Lic en Multimedia y Animacion Digital',
       imageURL: 'assets/LMAD.jpg',
-      coments: ['Carrera relacionada a la creacion de video juegos y multimedia']
+      coments: ['Formar profesionistas capaces de diseñar aplicaciones enfocadas a cubrir necesidades de la industria del arte digital y medios interactivos, haciendo uso de TICs y arte gráfico, para los sectores público y privado.']
     },
     {
       id: '3',
