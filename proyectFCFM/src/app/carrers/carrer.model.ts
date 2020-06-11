@@ -3,4 +3,5 @@ export interface Carrer {
     nombre: string;
     imageURL: string;
     coments: string[]
+    audio: string;
 }

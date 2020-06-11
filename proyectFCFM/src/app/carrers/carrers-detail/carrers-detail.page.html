@@ -30,6 +30,20 @@
           <ion-item *ngFor="let coment of carrer.coments">
             {{coment}}
           </ion-item>
+          <ion-button (click)="start(carrer.audio, $event)" color="dark" style="display:block; margin:auto; margin-top:10px;">
+            <ion-icon name="headset-outline" slot="start"></ion-icon>
+            Reproducir Audio
+          </ion-button>
+  
+          <ion-footer *ngIf="activeAudio" class="ion-text-center">
+            <ion-button *ngIf="activeAudio == carrer.audio && !isPlaying" color="dark" (click)="togglePlayer(false)">
+              <ion-icon slot="icon-only" name="play"></ion-icon>
+            </ion-button>
+  
+            <ion-button *ngIf="activeAudio == carrer.audio && isPlaying" color="dark" (click)="togglePlayer(true)">
+              <ion-icon slot="icon-only" name="pause"></ion-icon>
+            </ion-button>
+          </ion-footer>
         </ion-list>
         <ng-template #noComents>
           <ion-text>

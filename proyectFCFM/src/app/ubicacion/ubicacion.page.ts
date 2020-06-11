@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Geolocation } from "@ionic-native/geolocation/ngx";
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 declare var google;
 
@@ -16,6 +16,7 @@ interface Marker {
   templateUrl: './ubicacion.page.html',
   styleUrls: ['./ubicacion.page.scss'],
 })
+
 export class UbicacionPage implements OnInit {
 
   map = null;
@@ -23,25 +24,25 @@ export class UbicacionPage implements OnInit {
   directionsDisplay = new google.maps.DirectionsRenderer();
   platform: any;
   
-  // lati: 25.737811;
-  // lngi: -100.263298;
-
-  
   constructor(public geolocation: Geolocation) {}
   
-
   // la consola marca error getting location, user denied location promt
   // esta funcion obtiene la longitud y latitud del que usa la aplicacion pero tiene fallo
-  getLocation(){
-    this.geolocation.getCurrentPosition().then((resp) =>{
-      console.log("lat: " + resp.coords.latitude + "long: " + resp.coords.longitude)
-      // this.lati = resp.coords.latitude;
-      // this.lngi = resp.coords.longitude;
-    }).catch((error) => {
-      console.log('Error getting location', error);
-    });
+  private async getLocation(){
+    const rta = await this.geolocation.getCurrentPosition();
+    console.log("lat: " + rta.coords.latitude + "long: " + rta.coords.longitude);
+    return{
+      lat: rta.coords.latitude,
+      lng: rta.coords.longitude
+    }
+    // this.geolocation.getCurrentPosition().then((resp) =>{
+    //   console.log("lat: " + resp.coords.latitude + "long: " + resp.coords.longitude)
+    //   // this.lati = resp.coords.latitude;
+    //   // this.lngi = resp.coords.longitude;
+    // }).catch((error) => {
+    //   console.log('Error getting location', error);
+    // });
   }
-  
 
   // variables temporales para guardarlas de la funcion getLocation
   lati: number;
@@ -50,14 +51,13 @@ export class UbicacionPage implements OnInit {
   // coordenada origen temporal, se quiere obtener de currentPosition para generar la ruta 
   // de el que usa la aplicacion
    // origen
-   origin = { lat: 25.737811, lng: -100.263298 };
+  //  origin = { lat: 25.737811, lng: -100.263298 };
    // fcfm
    destination = { lat: 25.725542, lng: -100.315187 };
 
   ngOnInit() {
-   this.loadMap();
-   // obtener la geolocalizacion al momento que carga la pagina
   //  this.getLocation();
+   this.loadMap();
   }
 
 
@@ -79,8 +79,8 @@ export class UbicacionPage implements OnInit {
   
     google.maps.event.addListenerOnce(this.map, 'idle', () => {
       mapEle.classList.add('show-map');
-      // this.renderMarkers();
-      this.calculateRoute();
+      this.renderMarkers();
+      // this.calculateRoute();
     });
   }
 
@@ -92,7 +92,7 @@ export class UbicacionPage implements OnInit {
       // pero no da error la funcion mencionada
   private calculateRoute(){
     this.directionsService.route({
-      origin: this.origin,
+      origin: this.getLocation(),
       destination: this.destination,
       travelMode: google.maps.TravelMode.DRIVING,
     }, (response, status)  => {
