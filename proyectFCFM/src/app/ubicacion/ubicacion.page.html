@@ -27,16 +27,14 @@
         </ion-card-content>
       </ion-card>
     </ion-row>
+    <div  >
+      <ion-button (click)="loadMap()" expand="block"color="dark" shape="round">
+        Compartir Ubicacion
+      </ion-button>
+    </div>
     <ion-row>
-      <!-- <ion-button (click)="getLocation()" expand="block" shape="round">
-        Click me
-      </ion-button> -->
-        <div id="map"></div>
-        <!-- boton para prueba -->
-        <!-- <ion-button (click)="getLocation()" expand="block" shape="round" >
-          Click me
-        </ion-button> -->
-        <!-- <div id="indicators"></div> -->
+        <div class="ion-margin" id="map"></div>
+        <div id="indicators"></div>
     </ion-row>
   </ion-grid>
 </ion-content>
