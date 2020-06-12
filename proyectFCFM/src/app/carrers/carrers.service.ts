@@ -21,7 +21,7 @@ export class CarrersService {
       nombre: 'Lic en Ciencias Computacionales',
       imageURL: 'assets/LCC.jpg',
       coments: ['Objetivo: Formar profesionistas dedicados al estudio de las Ciencias Computacionales, con capacidad de crear, desarrollar e implementar tecnologías de información y comunicación, para apoyar el ámbito económico, social y científico de la región y del país, a través del desarrollo y conocimiento tecnológico.'],
-      audio: 'assets/Mate.mp3'
+      audio: 'assets/LCC.mp3'
     },
     {
       id: '3',

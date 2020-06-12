@@ -21,13 +21,6 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      Environment.setEnv({
-        // api key for server
-        'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyCKSe...qj-SAyUyKE',
-
-        // api key for local development
-        'API_KEY_FOR_BROWSER_DEBUG': 'AIzaSyCKSe...qj-SAyUyKE'
-      });
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
