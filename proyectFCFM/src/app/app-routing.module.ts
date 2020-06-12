@@ -15,7 +15,8 @@ const routes: Routes = [
         loadChildren: () => import('./carrers/carrers-detail/carrers-detail.module').then(m => m.CarrersDetailPageModule)
       }
     ]
-  },  {
+  },
+  {
     path: 'ubicacion',
     loadChildren: () => import('./ubicacion/ubicacion.module').then( m => m.UbicacionPageModule)
   },
@@ -26,8 +27,10 @@ const routes: Routes = [
   {
     path: 'reglamento',
     loadChildren: () => import('./reglamento/reglamento.module').then( m => m.ReglamentoPageModule)
+  },  {
+    path: 'actividades',
+    loadChildren: () => import('./actividades/actividades.module').then( m => m.ActividadesPageModule)
   },
-
 
 ];
 
