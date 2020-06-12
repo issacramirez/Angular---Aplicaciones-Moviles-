@@ -47,7 +47,7 @@
 
 .ion-padding-bottom{
   flex-direction: inherit;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   background-color: none;
 }
 
@@ -56,3 +56,14 @@
   height: 150px;
   width: 150px;
 }
+
+#img{
+  height: auto;
+  width: 160px;
+}
+
+// ion-content{
+//   --background: url('../../assets/FCFM-logo2.png') 0 0/100% 100% no-repeat ;
+//   width: 100€;
+//   height: 70€;
+// }

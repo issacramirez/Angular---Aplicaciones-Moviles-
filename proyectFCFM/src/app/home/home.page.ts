@@ -15,4 +15,15 @@ export class HomePage {
   changeDark(){
     this.homeService.changeDarkMode()
   }
+
+  images = [
+    {
+      img: 'assets/FCFM.jpg'
+    },
+    {
+      img: 'assets/UANL.jpg'
+    }
+  ]
+
+
 }

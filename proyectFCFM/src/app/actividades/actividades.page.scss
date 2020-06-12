@@ -1,0 +1,51 @@
+ion-slide{
+    display:block;
+    width: auto;
+    height: 450px;
+    }
+    
+    .slide-img-padding{
+    padding:350px;
+    }
+
+    #titulo{
+      background-color: slateblue;
+      text-align: center;
+      font-size: auto;
+      color: white;
+      background-image: url("/assets/kale-salad.jpg");
+      background-position: center;
+      background-repeat: repeat;
+      
+      }
+      
+      #nombredeporte{
+        background-color: midnightblue;
+        font-size: 50px;
+        color: white;
+      }
+      
+      #titulocard{
+        color:white;
+        font-size: 40px;
+        background-image: url("/assets/kale-salad.jpg");
+        background-position: center;
+        background-repeat: repeat;
+      }
+      
+      #nombreicono{
+        font-size: 30px;
+        color: 000;
+      }
+      
+      #subtitulocard{
+        font-size: 20px;
+        color: black;
+      }
+      
+      h3{
+        font-size:30px;
+        background-color: blue($color: #000000);
+        font-weight:lighter;
+        margin-bottom:60px;
+      }

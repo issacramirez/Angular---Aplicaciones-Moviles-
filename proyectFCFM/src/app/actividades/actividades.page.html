@@ -3,10 +3,55 @@
     <ion-buttons slot="start" >
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>actividades</ion-title>
+    <ion-title id="titulo" class="ion-no-padding" >Actividades Extracurriculares</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-slides pager="true" loop="true" [options]="slidesOptions" #slider>
+    <ion-slide *ngFor="let slide of slides" >
+      <div>
+        <img [src]="slide.img">
+      </div>
+      <div>
+        <p id="nombredeporte" [innerHTML]='slide.titulo' ></p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="titulocard" >Deportes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content id="subtitulocard" >
+      Integrate a uno de los equipos representativos que tenemos en la Facultad de ciencias fisico matematicas.
+      <ion-list>
+        <ion-item *ngFor="let deporte of deportes">
+          <ion-avatar slot="start" >
+            <img [src]="deporte.imagen"/>
+          </ion-avatar>
+          <ion-label id="nombreicono" >{{deporte.nombre}}</ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-button (click)="openUrl2()" expand="block" color="dark" shape="round">Ver más deportes</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-col>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title id="titulocard" >Difusion cultural</ion-card-title>
+      </ion-card-header>
+      <ion-card-content id="subtitulocard" >
+        Unete a uno de los diferentes clubes que ofrecemos en la Facultad de ciencias Fisico Matematicas.
+        <ion-list>
+          <ion-item *ngFor="let cultura of culturales">
+            <ion-avatar slot="start">
+              <img [src]="cultura.imagen"/>
+            </ion-avatar>
+            <ion-label id="nombreicono" >{{cultura.nombre}}</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-button (click)="openUrl()" expand="block" color="dark" shape="round">Ver más sobre difusión cultural</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
 </ion-content>

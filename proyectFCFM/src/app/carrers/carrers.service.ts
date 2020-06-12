@@ -14,7 +14,7 @@ export class CarrersService {
       nombre: 'Lic en Actuaria',
       imageURL: 'assets/LA.jpg',
       coments: ['Objetivo: Formar Licenciados en Actuaría apegados a los lineamientos educativos internacionales del gremio actuarial en base a los Modelos Educativo y Académico de la UANL.'],
-      audio: 'assets/Mate.mp3'
+      audio: 'assets/LA.mp3'
     },
     {
       id: '2',
@@ -42,14 +42,14 @@ export class CarrersService {
       nombre: 'Lic en Multimedia y Animacion Digital',
       imageURL: 'assets/LMAD.jpg',
       coments: ['Objetivo: Formar profesionistas capaces de diseñar aplicaciones enfocadas a cubrir necesidades de la industria del arte digital y medios interactivos, haciendo uso de TICs y arte gráfico, para los sectores público y privado.'],
-      audio: 'assets/Mate.mp3'
+      audio: 'assets/LMAD.mp3'
     },
     {
       id: '6',
       nombre: 'Lic en Seguridad en Tecnologias de la Informacion',
       imageURL: 'assets/LSTI.jpg',
       coments: ['Objetivo: Formar profesionales en la Licenciatura en Seguridad en Tecnologías de Información con sentido humanista, creativo e innovador, capaces de generar, difundir y aplicar el conocimiento para responder a las demandas del desarrollo científico, tecnológico, económico y social de la región y del país en el contexto internacional.'],
-      audio: 'assets/Mate.mp3'
+      audio: 'assets/LSTI.mp3'
     },
   ]
 

@@ -41,6 +41,7 @@ export class CarrersDetailPage implements OnInit {
       },
       onend: () => {
         this.isPlaying = false;
+        this.activeAudio = null;
       }
     })
     this.player.play();

@@ -5,28 +5,28 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
-  <ion-list hidden > 
-    <ion-item>
-        <ion-icon slot="start" name="moon"color="dark"></ion-icon>
-        <ion-toggle slot="end" [(ngModel)]="ionToggle" (ionChange)="changeDark()" ></ion-toggle>
-    </ion-item>
-  </ion-list>
-  <div class="ion-padding-bottom"></div>
-  <ion-list color="dark" >
+  <ion-card style="padding: 10px 5px 10px 5px;" >
+    <div style="display: flex;" >
+      <ion-item *ngFor="let image of images" >
+        <img id="img" [src]="image.img"/>
+      </ion-item>
+    </div>
+  </ion-card>
+  <ion-list color="dark">
     <ion-item [routerLink]="['/carrers']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Licenciaturas</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/actividades']" class="ion-text-center ion-item-menu ion-padding" color="light">
+      <ion-label>Actividades Extracorriculares</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/ubicacion']" class="ion-text-center ion-item-menu ion-padding" color="light">
+      <ion-label>Contacto</ion-label>
     </ion-item>
     <ion-item [routerLink]="['/historia']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Historia de la Facultad</ion-label>
     </ion-item>
     <ion-item [routerLink]="['/reglamento']" class="ion-text-center ion-item-menu ion-padding" color="light">
       <ion-label>Reglamento</ion-label>
-    </ion-item>
-    <ion-item [routerLink]="['/ubicacion']" class="ion-text-center ion-item-menu ion-padding" color="light">
-      <ion-label>Contacto</ion-label>
-    </ion-item>
-    <ion-item [routerLink]="['/actividades']" class="ion-text-center ion-item-menu ion-padding" color="light">
-      <ion-label>Actividades Extracorriculares</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
